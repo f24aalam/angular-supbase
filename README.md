@@ -1,5 +1,8 @@
 # SupabaseAngular
 
+<img width="892" alt="Screenshot 2022-05-07 at 1 25 23 PM" src="https://user-images.githubusercontent.com/20462189/167245400-26ed66d3-b4b9-419a-8754-f75cfa5e6cea.png">
+<img width="712" alt="Screenshot 2022-05-07 at 1 26 12 PM" src="https://user-images.githubusercontent.com/20462189/167245405-8b39eeed-ebaf-44d5-b2a3-b19def157392.png">
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
 ## Development server
