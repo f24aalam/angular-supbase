@@ -1,0 +1,25 @@
+<div class="flex flex-col gap-4 justify-center w-40">
+  <img
+    *ngIf="_avatarUrl"
+    [src]="_avatarUrl"
+    alt="Avatar"
+    class="rounded-full shadow"
+  >
+  <div class="w-full">
+    <label
+      class="w-full mt-2 py-2 px-4 bg-red-500 text-white rounded shadow hover:shadow-lg hover:bg-red-400"
+      for="single"
+    >
+      {{uploading ? 'Uploading ...' : 'Upload'}}
+    </label>
+    <input
+      style="visibility: hidden;position: absolute"
+      type="file"
+      id="single"
+      accept="image/*"
+      (change)="uploadAvatar($event)"
+      [disabled]="uploading"
+    />
+  </div>
+</div>
+<div *ngIf="!_avatarUrl"></div>

@@ -1,5 +1,11 @@
 <div class="h-screen flex justify-center items-center bg-gray-200">
   <div class="w-3/12 bg-white mr-8 px-6 py-4 shadow-md rounded border-t-4 border-red-500 text-center">
+    <div>
+      <app-avatar
+          [avatarUrl]="this.profile?.avatar_url"
+          (upload)="updateProfile(username.value, website.value, $event)">
+      </app-avatar>
+    </div>
     <div class="flex pt-4">
       <input
         id="email"

@@ -40,6 +40,7 @@ export class AccountComponent implements OnInit {
   }
 
   async updateProfile(username: string, website: string, avatar_url: string = '') {
+    console.log(avatar_url)
     try {
       this.loading = true;
       await this.supabase.updateProfile({username, website, avatar_url});
